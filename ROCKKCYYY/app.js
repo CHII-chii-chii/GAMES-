@@ -19,7 +19,7 @@ possibleChoices.forEach((button) =>
 function generateComputerChoice() {
     const choices = ["ROCK", "PAPER", "SCISSOR"];
     computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    computerChoiceDisplay.innerHTML = computerChoice;
+    computerChoiceDisplay.innerHTML = computerChoice
 }
 
 function checkWinner() {
