@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+#score, #time-left {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin: 5px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #b2ebf2;
+    border: 4px solid #004d40;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.square:hover {
+    transform: scale(1.05);
+    background-color: #80deea;
+}
+
+.mole {
+    background-image: url('mole.jpg');
+    background-size: cover;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#start-btn:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 100px);
+        gap: 10px;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+    #score, #time-left {
+        font-size: 2rem;
+    }
+}
