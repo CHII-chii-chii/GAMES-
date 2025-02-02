@@ -37,3 +37,4 @@ function checkWinner() {
 
     resultDisplay.innerHTML = result;
 }
+
